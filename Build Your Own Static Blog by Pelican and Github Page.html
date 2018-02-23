@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="chinese (simplified)">
+<head>
+	<meta charset="utf-8">
+	<title>Build Your Own Static Blog by Pelican and Github Page — PhilGao</title>
+	<meta name="description" content="Title: Build Your Own Static Blog by Pelican and Github Page; Date: 2018-02-23; Author: Phil.Gao">
+	<meta name="author" content="PhilGao">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="http://PhilGao.github.io/theme/html5.js"></script>
+		<![endif]-->
+	<link href="http://PhilGao.github.io/theme/css/ipython.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
+	<link href="http://PhilGao.github.io/theme/css/local.css" rel="stylesheet">
+	<link href="http://PhilGao.github.io/theme/css/pygments.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1><a href="http://PhilGao.github.io/">PhilGao</a>
+			<br>	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="text-center article-header">
+		<h1 itemprop="name headline" class="article-title">Build Your Own Static Blog by Pelican and Github Page</h1>
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<h4 itemprop="name">Phil.Gao</h4>
+		</span>
+		<time datetime="2018-02-23T22:39:00+01:00" itemprop="datePublished">周五 23 二月 2018</time>
+	</div>
+	<div>
+		Category:
+		<span itemprop="articleSection">
+			<a href="http://PhilGao.github.io/category/blog.html" rel="category">Blog</a>
+		</span>
+	</div>
+ 
+	<div>
+		Tags:
+		<span itemprop="keywords">
+			<a href="http://PhilGao.github.io/tag/pelican.html" rel="tag">pelican</a>
+		</span>
+		<span itemprop="keywords">
+			<a href="http://PhilGao.github.io/tag/publishing.html" rel="tag">publishing</a>
+		</span>
+	</div>
+	<div itemprop="articleBody" class="article-body"><h1>Build Your Own Static Blog by Pelican and Github Page</h1>
+<h3>What's the Pelican ?</h3>
+<p>Pelican is a static site generator, written in Python. You could see it as a tools that able to transform your markdown post as html format.</p>
+<blockquote>
+<p>Here is the document link for <em><a href="http://docs.getpelican.com/en/stable/">Pelican</a></em></p>
+</blockquote>
+<h3>What's Github Pages ?</h3>
+<p>GitHub Pages is a static site hosting service. It is designed to host your personal, organization, or project pages directly from a GitHub repository.</p>
+<p>I simply list steps about creating  github pages :
+  * Create a account 
+  * Create a repository named : <code>username.github.io</code>
+  * Pull this reporsitory
+  * Add one index.html file to initial 
+  * Commit &amp; Push</p>
+<blockquote>
+<p>Here is <a href="https://pages.github.com/"><em>Step by step guide</em></a> from github </p>
+</blockquote>
+<h3>Before you go , what you should prepare ?</h3>
+<ul>
+<li>Install envitual enviroment</li>
+<li>Install Pelican </li>
+<li>Create Two of Github repository (One stores site file , another store the source code )</li>
+<li>Install Markdown </li>
+</ul>
+<h3>How to made it ?</h3>
+<h5>Step 1 : Install virtaulenv</h5>
+<div class="highlight"><pre><span></span>pip install virtualenv
+</pre></div>
+
+
+<h5>Step 2 : Setup virtualenv</h5>
+<div class="highlight"><pre><span></span>virtualenv F:\venv1
+</pre></div>
+
+
+<blockquote>
+<p>F:\venv1 is a directory to place the new virtual environment</p>
+</blockquote>
+<div class="highlight"><pre><span></span>cd F:\venv1\Scripts
+activate
+</pre></div>
+
+
+<blockquote>
+<p>As I am using windows I need to change directory to "Scripts" folder<br>
+Then the command line would look like this </p>
+</blockquote>
+<div class="highlight"><pre><span></span>(venv1) F:\venv1\Scripts&gt;
+</pre></div>
+
+
+<blockquote>
+<p>Note : using deactivate to close the environment<br>
+Code like this : </p>
+</blockquote>
+<div class="highlight"><pre><span></span>cd F:\venv1\Scripts
+deactivate
+</pre></div>
+
+
+<h5>Step 3 : Install the Pelican</h5>
+<p>Simply run </p>
+<div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pelican</span>
+</pre></div>
+
+
+<h5>Step 4: Initial the Repository</h5>
+<p>Clone the souce code repository  </p>
+<div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github.com</span><span class="p">:</span><span class="n">username</span><span class="o">/</span><span class="n">username</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">-</span><span class="n">src</span> <span class="n">blog</span>
+<span class="n">cd</span> <span class="n">blog</span>
+</pre></div>
+
+
+<p>Confirm the repository information </p>
+<div class="highlight"><pre><span></span>git remote -v
+</pre></div>
+
+
+<p>Add submodel as the output folder to blog repository</p>
+<div class="highlight"><pre><span></span>git submodule add git@github.com:username/username.github.io.git output
+````
+
+#####Step 5 : Set up Pelican 
+```python
+pelican quickstart 
+</pre></div>
+
+
+<h5>Step 6 : Build Blog</h5>
+<div class="highlight"><pre><span></span>pelican content
+</pre></div>
+
+
+<h5>Step 7 : Preview the Site</h5>
+<div class="highlight"><pre><span></span>cd ~/projects/yoursite/output
+python -m pelican.server
+</pre></div>
+
+
+<h5>Step 8 : Add &amp; Commit Change</h5>
+<div class="highlight"><pre><span></span>cd output
+git add .
+git commit -m &quot;First post.&quot;
+git push -u origin master
+cd ..
+echo &#39;*.pyc&#39; &gt;&gt; .gitignore #don&#39;t need pyc files
+git add .
+git commit -m &quot;First commit.&quot;
+git push -u origin master
+</pre></div>
+
+
+<h3>How to add themes for you blog ?</h3>
+<p>Pelican has made a lot of themes in the github. You could preview these themes in http://www.pelicanthemes.com/ and choose one you like.</p>
+<h4>Step one : get the themes file from github</h4>
+<p>You can clone all the reporsitory or download zip file </p>
+<h4>Step two : Install themes</h4>
+<p>You shall activate the virtaulenv first , move the folder scripts </p>
+<div class="highlight"><pre><span></span><span class="n">pelican</span><span class="o">-</span><span class="n">themes</span> <span class="o">--</span><span class="n">install</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Phil</span><span class="o">.</span><span class="n">Gao</span>\<span class="n">BlogThemes</span>\<span class="n">pelican</span><span class="o">-</span><span class="n">themes</span>\<span class="n">bootlex</span>
+<span class="n">pelican</span><span class="o">-</span><span class="n">themes</span> <span class="o">-</span><span class="n">l</span>
+</pre></div>
+
+
+<h4>Step Three : configure the file in</h4>
+<p>Add Theme configuration </p>
+<div class="highlight"><pre><span></span>THEME = &quot;bootlex&quot;
+</pre></div>
+
+
+<h3>To be continued..</h3>
+<blockquote>
+<p><strong>Note</strong> : </p>
+<ol>
+<li>Customized your own themes (change ---&gt; create )</li>
+<li>Add the comment area </li>
+<li>Add picture at the post </li>
+<li>change the site URL</li>
+<li>What's best practise to publish consistly ? </li>
+</ol>
+</blockquote>
+<hr></div>
+	<hr>
+	<h2>Comments</h2>
+</div>
+		</div>
+	</div> 	<!-- <hr> -->
+</div> <!-- /container -->
+<footer class="aw-footer bg-danger">
+	<div class="container"> <!-- footer -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Navigation</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="http://PhilGao.github.io">PhilGao</a></li>
+							<li><a href="http://PhilGao.github.io/feeds/all.atom.xml" type="application/atom+xml"><i class="fa fa-rss "></i> atom</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Author</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="#">You can add links in your config file</a></li>
+							<li><a href="#">Another social link</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Categories</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="http://PhilGao.github.io/category/blog.html">Blog (1)</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Links</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="http://getpelican.com/">Pelican</a></li>
+							<li><a href="http://python.org/">Python.org</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center center-block aw-bottom">
+			<p>&copy; PhilGao 2016</p>
+			<p>Powered by Pelican</p>
+		</div>
+	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("div.collapseheader").click(function () {
+		$header = $(this).children("span").first();
+		$codearea = $(this).children(".input_area");
+		$codearea.slideToggle(500, function () {
+			$header.text(function () {
+				return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+			});
+		});
+	});
+});
+</script>
+</body>
+</html>
