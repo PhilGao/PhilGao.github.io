@@ -2,8 +2,8 @@
 <html lang="chinese (simplified)">
 <head>
 	<meta charset="utf-8">
-	<title>PhilGao</title>
-	<meta name="description" content="Coding, scientific development, finance, data analysis, visualization, statistics, and machine learning">
+	<title>Build Your Own Static Blog by Pelican and Github Page PartII — PhilGao</title>
+	<meta name="description" content="Title: Build Your Own Static Blog by Pelican and Github Page PartII; Date: 2018-03-27; Author: Phil.Gao">
 	<meta name="author" content="PhilGao">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -24,67 +24,59 @@
 			<br><small>行百里者半九十</small></h1>	</div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
-        
-        
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-	<a href="http://PhilGao.github.io/Build Your Own Static Blog by Pelican and Github Page PartII.html">
-		<h2 itemprop="name headline">Build Your Own Static Blog by Pelican and Github Page PartII</h2>
-	</a>
-	<time datetime="2018-03-27T22:39:00+02:00" itemprop="datePublished">周二 27 三月 2018</time>
-	&nbsp;—&nbsp;
-	<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-		<span itemprop="name">Phil.Gao</span>
-	</span>
-	<div class="summary"><p>Part2 would go to answer some questions I left in part1.It also post some issue and solution that i met when trying to build my blog. The part 2 would continusely update.</p></div>
-	Category:
-	<span itemprop="articleSection">
-		<a href="http://PhilGao.github.io/category/blog.html" rel="category">Blog</a>
-	</span>
-	Tags:
+	<div class="text-center article-header">
+		<h1 itemprop="name headline" class="article-title">Build Your Own Static Blog by Pelican and Github Page PartII</h1>
+		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+			<h4 itemprop="name">Phil.Gao</h4>
+		</span>
+		<time datetime="2018-03-27T22:39:00+02:00" itemprop="datePublished">周二 27 三月 2018</time>
+	</div>
+	<div>
+		Category:
+		<span itemprop="articleSection">
+			<a href="http://PhilGao.github.io/category/blog.html" rel="category">Blog</a>
+		</span>
+	</div>
  
-	<span itemprop="keywords">
-		<a href="http://PhilGao.github.io/tag/pelican.html" rel="tag">pelican</a>
-	</span>
-	<span itemprop="keywords">
-		<a href="http://PhilGao.github.io/tag/publishing.html" rel="tag">publishing</a>
-	</span>
+	<div>
+		Tags:
+		<span itemprop="keywords">
+			<a href="http://PhilGao.github.io/tag/pelican.html" rel="tag">pelican</a>
+		</span>
+		<span itemprop="keywords">
+			<a href="http://PhilGao.github.io/tag/publishing.html" rel="tag">publishing</a>
+		</span>
+	</div>
+	<div itemprop="articleBody" class="article-body"><h1>Build Your Own Static Blog by Pelican and Github Page Part2</h1>
+<p>Part2 would go to answer some questions i left in part1.It also post some issue and solution that i met when trying to build my blog. The part 2 would continusly update.</p>
+<h2>How to insert pictures in pelican.</h2>
+<p>I put the link in pelican guide about how to insert static file here.
+<a href="http://docs.getpelican.com/en/latest/content.html?highlight=files#linking-to-internal-content"><em>Link to internal content</em></a></p>
+<h6>Step1 Create one Folder under content which named images</h6>
+<h6>Step2 Put the picture that you want to link to in this fold. I download a cat picture and name it as cat.jpg</h6>
+<h6>Step3 Use below MD gramar to insert picture.In here {filename} would direct to content folder.</h6>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">]({</span><span class="n">filename</span><span class="p">}</span><span class="o">/</span><span class="n">images</span><span class="o">/</span><span class="n">cat</span><span class="p">.</span><span class="n">jpg</span> <span class="s">&quot;Cat&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p><img alt="Alt text" src="http://PhilGao.github.io/images/cat.jpg" title="Cat"></p></div>
+	<hr>
+	<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'gaohao'; 
+    var disqus_title = 'Build Your Own Static Blog by Pelican and Github Page PartII';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
-<hr>
-        
-<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-	<a href="http://PhilGao.github.io/Build Your Own Static Blog by Pelican and Github Page PartI.html">
-		<h2 itemprop="name headline">Build Your Own Static Blog by Pelican and Github Page PartI</h2>
-	</a>
-	<time datetime="2018-02-23T22:39:00+01:00" itemprop="datePublished">周五 23 二月 2018</time>
-	&nbsp;—&nbsp;
-	<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-		<span itemprop="name">Phil.Gao</span>
-	</span>
-	<div class="summary"><p>Introducation how to quick start to set up the site,add themes,configure publish configuration file &amp; apply theme.Also record some tips on git command that are used to commit into github.</p></div>
-	Category:
-	<span itemprop="articleSection">
-		<a href="http://PhilGao.github.io/category/blog.html" rel="category">Blog</a>
-	</span>
-	Tags:
- 
-	<span itemprop="keywords">
-		<a href="http://PhilGao.github.io/tag/pelican.html" rel="tag">pelican</a>
-	</span>
-	<span itemprop="keywords">
-		<a href="http://PhilGao.github.io/tag/publishing.html" rel="tag">publishing</a>
-	</span>
-</div>
-<hr>
- <div class="pagination">
-<ul>
-    <li class="prev disabled"><a href="#">&larr; Previous</a></li>
-
-    <li class="active"><a href="http://PhilGao.github.io/index.html">1</a></li>
-
-    <li class="next disabled"><a href="#">&rarr; Next</a></li>
-
-</ul>
-</div> 		</div>
+		</div>
 	</div> 	<!-- <hr> -->
 </div> <!-- /container -->
 <footer class="aw-footer bg-danger">

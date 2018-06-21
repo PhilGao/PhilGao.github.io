@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PhilGao - Blog</title><link href="http://PhilGao.github.io/" rel="alternate"></link><link href="http://PhilGao.github.io/feeds/blog.atom.xml" rel="self"></link><id>http://PhilGao.github.io/</id><updated>2018-02-23T22:39:00+01:00</updated><entry><title>Build Your Own Static Blog by Pelican and Github Page</title><link href="http://PhilGao.github.io/Build%20Your%20Own%20Static%20Blog%20by%20Pelican%20and%20Github%20Page.html" rel="alternate"></link><published>2018-02-23T22:39:00+01:00</published><updated>2018-02-23T22:39:00+01:00</updated><author><name>Phil.Gao</name></author><id>tag:philgao.github.io,2018-02-23:/Build Your Own Static Blog by Pelican and Github Page.html</id><summary type="html">&lt;p&gt;Build Your Own Static Blog by Pelican and Github Page&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Build Your Own Static Blog by Pelican and Github Page&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PhilGao - Blog</title><link href="http://PhilGao.github.io/" rel="alternate"></link><link href="http://PhilGao.github.io/feeds/blog.atom.xml" rel="self"></link><id>http://PhilGao.github.io/</id><updated>2018-03-27T22:39:00+02:00</updated><entry><title>Build Your Own Static Blog by Pelican and Github Page PartII</title><link href="http://PhilGao.github.io/Build%20Your%20Own%20Static%20Blog%20by%20Pelican%20and%20Github%20Page%20PartII.html" rel="alternate"></link><published>2018-03-27T22:39:00+02:00</published><updated>2018-03-27T22:39:00+02:00</updated><author><name>Phil.Gao</name></author><id>tag:philgao.github.io,2018-03-27:/Build Your Own Static Blog by Pelican and Github Page PartII.html</id><summary type="html">&lt;p&gt;Part2 would go to answer some questions I left in part1.It also post some issue and solution that i met when trying to build my blog. The part 2 would continusely update.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Build Your Own Static Blog by Pelican and Github Page Part2&lt;/h1&gt;
+&lt;p&gt;Part2 would go to answer some questions i left in part1.It also post some issue and solution that i met when trying to build my blog. The part 2 would continusly update.&lt;/p&gt;
+&lt;h2&gt;How to insert pictures in pelican.&lt;/h2&gt;
+&lt;p&gt;I put the link in pelican guide about how to insert static file here.
+&lt;a href="http://docs.getpelican.com/en/latest/content.html?highlight=files#linking-to-internal-content"&gt;&lt;em&gt;Link to internal content&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h6&gt;Step1 Create one Folder under content which named images&lt;/h6&gt;
+&lt;h6&gt;Step2 Put the picture that you want to link to in this fold. I download a cat picture and name it as cat.jpg&lt;/h6&gt;
+&lt;h6&gt;Step3 Use below MD gramar to insert picture.In here {filename} would direct to content folder.&lt;/h6&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Alt&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;]({&lt;/span&gt;&lt;span class="n"&gt;filename&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;images&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;cat&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;jpg&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;Cat&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;&lt;img alt="Alt text" src="http://PhilGao.github.io/images/cat.jpg" title="Cat"&gt;&lt;/p&gt;</content><category term="pelican"></category><category term="publishing"></category></entry><entry><title>Build Your Own Static Blog by Pelican and Github Page PartI</title><link href="http://PhilGao.github.io/Build%20Your%20Own%20Static%20Blog%20by%20Pelican%20and%20Github%20Page%20PartI.html" rel="alternate"></link><published>2018-02-23T22:39:00+01:00</published><updated>2018-02-23T22:39:00+01:00</updated><author><name>Phil.Gao</name></author><id>tag:philgao.github.io,2018-02-23:/Build Your Own Static Blog by Pelican and Github Page PartI.html</id><summary type="html">&lt;p&gt;Introducation how to quick start to set up the site,add themes,configure publish configuration file &amp;amp; apply theme.Also record some tips on git command that are used to commit into github.&lt;/p&gt;</summary><content type="html">&lt;h1&gt;Build Your Own Static Blog by Pelican and Github Page&lt;/h1&gt;
+&lt;p&gt;&lt;img alt="Alt text" src="http://PhilGao.github.io/images/cat.jpg" title="Cat"&gt;&lt;/p&gt;
 &lt;h3&gt;What's the Pelican ?&lt;/h3&gt;
 &lt;p&gt;Pelican is a static site generator, written in Python. You could see it as a tools that able to transform your markdown post as html format.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -89,6 +102,7 @@ pelican quickstart
 
 &lt;h5&gt;Step 6 : Build Blog&lt;/h5&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pelican content
+pelican content -s publishconf.py
 &lt;/pre&gt;&lt;/div&gt;
 
 

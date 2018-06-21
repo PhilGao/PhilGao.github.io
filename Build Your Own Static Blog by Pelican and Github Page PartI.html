@@ -2,8 +2,8 @@
 <html lang="chinese (simplified)">
 <head>
 	<meta charset="utf-8">
-	<title>Build Your Own Static Blog by Pelican and Github Page — PhilGao</title>
-	<meta name="description" content="Title: Build Your Own Static Blog by Pelican and Github Page; Date: 2018-02-23; Author: Phil.Gao">
+	<title>Build Your Own Static Blog by Pelican and Github Page PartI — PhilGao</title>
+	<meta name="description" content="Title: Build Your Own Static Blog by Pelican and Github Page PartI; Date: 2018-02-23; Author: Phil.Gao">
 	<meta name="author" content="PhilGao">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -21,12 +21,12 @@
 <div class="container">
 	<div class="page-header">
 		<h1><a href="http://PhilGao.github.io/">PhilGao</a>
-			<br>	</div>
+			<br><small>行百里者半九十</small></h1>	</div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
 	<div class="text-center article-header">
-		<h1 itemprop="name headline" class="article-title">Build Your Own Static Blog by Pelican and Github Page</h1>
+		<h1 itemprop="name headline" class="article-title">Build Your Own Static Blog by Pelican and Github Page PartI</h1>
 		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
 			<h4 itemprop="name">Phil.Gao</h4>
 		</span>
@@ -49,6 +49,7 @@
 		</span>
 	</div>
 	<div itemprop="articleBody" class="article-body"><h1>Build Your Own Static Blog by Pelican and Github Page</h1>
+<p><img alt="Alt text" src="http://PhilGao.github.io/images/cat.jpg" title="Cat"></p>
 <h3>What's the Pelican ?</h3>
 <p>Pelican is a static site generator, written in Python. You could see it as a tools that able to transform your markdown post as html format.</p>
 <blockquote>
@@ -138,6 +139,7 @@ pelican quickstart
 
 <h5>Step 6 : Build Blog</h5>
 <div class="highlight"><pre><span></span>pelican content
+pelican content -s publishconf.py
 </pre></div>
 
 
@@ -191,6 +193,18 @@ git push -u origin master
 <hr></div>
 	<hr>
 	<h2>Comments</h2>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'gaohao'; 
+    var disqus_title = 'Build Your Own Static Blog by Pelican and Github Page PartI';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 		</div>
 	</div> 	<!-- <hr> -->
@@ -217,7 +231,7 @@ git push -u origin master
 					<div class="col-md-3">
 						<h4>Categories</h4>
 						<ul class="list-unstyled my-list-style">
-							<li><a href="http://PhilGao.github.io/category/blog.html">Blog (1)</a></li>
+							<li><a href="http://PhilGao.github.io/category/blog.html">Blog (2)</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3">
