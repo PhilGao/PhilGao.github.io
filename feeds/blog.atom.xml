@@ -80,8 +80,8 @@ deactivate
 
 &lt;h5&gt;Step 4: Initial the Repository&lt;/h5&gt;
 &lt;p&gt;Clone the souce code repository  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;clone&lt;/span&gt; &lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="nd"&gt;@github.com&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;username&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;src&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;
-&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="n"&gt;blog&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git clone git@github.com:username/username.github.io-src blog
+cd blog
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -92,11 +92,11 @@ deactivate
 
 &lt;p&gt;Add submodel as the output folder to blog repository&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git submodule add git@github.com:username/username.github.io.git output
-````
+&lt;/pre&gt;&lt;/div&gt;
 
-#####Step 5 : Set up Pelican 
-```python
-pelican quickstart 
+
+&lt;h5&gt;Step 5 : Set up Pelican&lt;/h5&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pelican&lt;/span&gt; &lt;span class="n"&gt;quickstart&lt;/span&gt; 
 &lt;/pre&gt;&lt;/div&gt;
 
 
