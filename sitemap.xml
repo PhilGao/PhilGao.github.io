@@ -4,70 +4,70 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>/</loc>
-<lastmod>2018-08-08T13:07:39-00:00</lastmod>
+<loc>http://PhilGao.github.io/</loc>
+<lastmod>2018-08-08T14:20:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/archives.html</loc>
-<lastmod>2018-08-08T13:07:39-00:00</lastmod>
+<loc>http://PhilGao.github.io/archives.html</loc>
+<lastmod>2018-08-08T14:20:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tags.html</loc>
-<lastmod>2018-08-08T13:07:39-00:00</lastmod>
+<loc>http://PhilGao.github.io/tags.html</loc>
+<lastmod>2018-08-08T14:20:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/categories.html</loc>
-<lastmod>2018-08-08T13:07:39-00:00</lastmod>
+<loc>http://PhilGao.github.io/categories.html</loc>
+<lastmod>2018-08-08T14:20:18-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/Build Your Own Static Blog by Pelican and Github Page PartII.html</loc>
+<loc>http://PhilGao.github.io/Build Your Own Static Blog by Pelican and Github Page PartII.html</loc>
 <lastmod>2018-03-27T22:39:00+02:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/Build Your Own Static Blog by Pelican and Github Page PartI.html</loc>
+<loc>http://PhilGao.github.io/Build Your Own Static Blog by Pelican and Github Page PartI.html</loc>
 <lastmod>2018-02-23T22:39:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/category/blog.html</loc>
+<loc>http://PhilGao.github.io/category/blog.html</loc>
 <lastmod>2018-03-27T22:39:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/pelican.html</loc>
+<loc>http://PhilGao.github.io/tag/pelican.html</loc>
 <lastmod>2018-03-27T22:39:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/tag/publishing.html</loc>
+<loc>http://PhilGao.github.io/tag/publishing.html</loc>
 <lastmod>2018-03-27T22:39:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>/author/philgao.html</loc>
+<loc>http://PhilGao.github.io/author/philgao.html</loc>
 <lastmod>2018-03-27T22:39:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
